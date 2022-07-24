@@ -18,7 +18,12 @@ body {
   column-gap: 48px;
   justify-content: center;
   grid-template-columns: repeat(1, 200px);
-  grid-template-columns: repeat(2, 200px);
+  
+  @media (min-width: 488px) {
+    & {
+      grid-template-columns: repeat(2, 200px);
+    }
+  }
   
   @media (min-width: 768px) {
     & {
