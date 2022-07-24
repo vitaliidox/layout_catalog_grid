@@ -10,25 +10,15 @@ body {
   box-sizing: border-box;
 }
 
-@import "_header.scss";
-@import "_catalog.scss";
+@import "header.scss";
+@import "catalog.scss";
 
 .catalog {
   display: grid;
   column-gap: 48px;
   justify-content: center;
-
-  @media (max-width: 488px) {
-    & {
-      grid-template-columns: repeat(1, 200px);
-    }
-  }
-  
-  @media (min-width: 488px) {
-    & {
-      grid-template-columns: repeat(2, 200px);
-    }
-  }
+  grid-template-columns: repeat(1, 200px);
+  grid-template-columns: repeat(2, 200px);
   
   @media (min-width: 768px) {
     & {
